@@ -9,6 +9,8 @@ import { Car } from './car.model';
 })
 export class CarsService {
 
+  selectedCars: Car[] = [];
+
   constructor(private http: HttpClient) { }
 
   public loadCars(): Observable<any> {
@@ -24,5 +26,14 @@ export class CarsService {
             return car.id === id;
         })[0];
     }));
-}
+  }
+
+  public setSelectedCarsToCompare(cars) {
+    this.selectedCars = [];
+    this.selectedCars = cars;
+  }
+
+  public getSelectedCarsToCompare() {
+    return this.selectedCars;
+  }
 }

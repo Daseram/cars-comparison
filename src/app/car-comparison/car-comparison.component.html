@@ -1,3 +1,57 @@
-<p>
-  car-comparison works!
-</p>
+<div class="row">
+  <div class="col-lg-12">
+    <button class="btn btn-primary back-btn" routerLink="/">Volver</button>
+  </div>
+</div>
+<div class="row" *ngIf="selectedCars.length === 2">
+  <div class="col-md-6 col-lg-6" *ngFor="let car of selectedCars">
+    <div class="card">
+      <img class="card-img-top" [src]="getPhoto(car.foto)" alt="{{car.modelo}}">
+      <div class="card-body text-center">
+        <h5 class="card-title"><b>{{car.modelo}}</b></h5>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td class="text-center">Marca: {{car.marca}}</td>
+            </tr>
+            <tr>
+              <td class="text-center">Modelo: {{car.modelo}}</td>
+            </tr>
+            <tr>
+              <td class="text-center">Año: {{car.anio}}</td>
+            </tr>
+            <tr>
+              <td class="text-center">Precio: {{car.precio}}</td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" *ngIf="selectedCars.length === 3">
+  <div class="col-md-4 col-lg-4" *ngFor="let car of selectedCars">
+    <div class="card">
+      <img class="card-img-top" [src]="getPhoto(car.foto)" alt="{{car.modelo}}">
+      <div class="card-body text-center">
+        <h5 class="card-title"><b>{{car.modelo}}</b></h5>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td class="text-center">Marca: {{car.marca}}</td>
+            </tr>
+            <tr>
+              <td class="text-center">Modelo: {{car.modelo}}</td>
+            </tr>
+            <tr>
+              <td class="text-center">Año: {{car.anio}}</td>
+            </tr>
+            <tr>
+              <td class="text-center">Precio: {{car.precio}}</td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

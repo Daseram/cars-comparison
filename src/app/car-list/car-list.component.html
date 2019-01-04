@@ -5,6 +5,7 @@
           <span class="input-group-btn">
               <button type="submit" class="btn btn-outline-secondary">Buscar</button>
           </span>
+          <button type="button" class="btn btn-primary compare-btn" (click)="goToCompare()">Comparar</button>
       </div>
   </div>
 </div>
@@ -39,6 +40,10 @@
         </tbody>
         </table>
         <a (click)="goToCar(car.id)" class="btn btn-primary">Ver Detalle</a>
+        <div class="form-group">
+          <label for="comparison">Comparar</label>
+          <input type="checkbox" class="form-control" (click)="selectCarForComparison(car)">
+        </div>
       </div>
     </div>
   </div>

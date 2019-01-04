@@ -13,6 +13,7 @@ export class CarListComponent implements OnInit {
 
   cars: Car[] = [];
   searchText = '';
+  selectedCars: Car[] = [];
 
   constructor(private carsService: CarsService, private route: Router) { }
 
@@ -34,6 +35,27 @@ export class CarListComponent implements OnInit {
 
   goToCar(id: string) {
     this.route.navigate(['/details', id]);
+  }
+
+  selectCarForComparison(car: Car) {
+    const selectedCar = this.selectedCars.filter(foundCar => (foundCar.id === car.id));
+    if (selectedCar.length < 1) {
+      this.selectedCars.push(car);
+    } else {
+      const index = this.selectedCars.indexOf(car);
+      this.selectedCars.splice(index, 1);
+    }
+  }
+
+  goToCompare() {
+    if (this.selectedCars.length < 2) {
+      alert('Minimo dos autos deben ser elegidos para ser comparados.');
+    } else if (this.selectedCars.length > 3) {
+      alert('No se pueden elegir mas de tres autos para comparar.');
+    } else {
+      this.carsService.setSelectedCarsToCompare(this.selectedCars);
+      this.route.navigate(['/compare']);
+    }
   }
 
 }
