@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-lg-12 text-center" *ngIf="selectedCar?.foto">
+    <img [src]="getPhoto(selectedCar?.foto)" alt="{{selectedCar?.modelo}}" class="img-responsive">
+  </div>  
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td class="text-center">Marca: {{selectedCar?.marca}}</td>
+          <td class="text-center">Modelo: {{selectedCar?.modelo}}</td>
+          <td class="text-center">Año: {{selectedCar?.anio}}</td>
+          <td class="text-center">Precio: {{selectedCar?.precio}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<button class="btn btn-primary float-right" routerLink="/">Volver</button>

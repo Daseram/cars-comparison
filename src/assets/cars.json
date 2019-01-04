@@ -1,0 +1,100 @@
+{
+    "cars": [
+        {
+            "id": 1,
+            "foto": "alto.jpg",
+            "modelo": "Capture",
+            "marca": "Chevrolet",
+            "precio": 30000,
+            "anio": "2016"
+        },
+        {
+            "id": 2,
+            "foto": "audi.jpg",
+            "modelo": "A4",
+            "marca": "Audi",
+            "precio": 50000,
+            "anio": "2018"
+        },
+        {
+            "id": 3,
+            "foto": "baleno.JPG",
+            "modelo": "Baleno",
+            "marca": "Suzuki",
+            "precio": 45000,
+            "anio": "2019"
+        },
+        {
+            "id": 4,
+            "foto": "camry.jpg",
+            "modelo": "Camry",
+            "marca": "Toyota",
+            "precio": 1000000,
+            "anio": "2016"
+        },
+        {
+            "id": 5,
+            "foto": "corvette.jpg",
+            "modelo": "Corvette",
+            "marca": "Chevrolet",
+            "precio": 150000,
+            "anio": "2019"
+        },
+        {
+            "id": 6,
+            "foto": "genesis.jpg",
+            "modelo": "Genesis",
+            "marca": "Hyundai",
+            "precio": 66000,
+            "anio": "2017"
+        },
+        {
+            "id": 7,
+            "foto": "kwid.jpg",
+            "modelo": "Kwid",
+            "marca": "Renault",
+            "precio": 61000,
+            "anio": "2016"
+        },
+        {
+            "id": 8,
+            "foto": "nexon.jpg",
+            "modelo": "Nexon",
+            "marca": "Tata",
+            "precio": 25000,
+            "anio": "2012"
+        },
+        {
+            "id": 9,
+            "foto": "q3.jpg",
+            "modelo": "Q3",
+            "marca": "Audi",
+            "precio": 200000,
+            "anio": "2019"
+        },
+        {
+            "id": 10,
+            "foto": "suv.jpg",
+            "modelo": "CR-V",
+            "marca": "Honda",
+            "precio": 80000,
+            "anio": "2018"
+        },
+        {
+            "id": 11,
+            "foto": "x590.jpg",
+            "modelo": "Suv",
+            "marca": "Jaguar",
+            "precio": 200000,
+            "anio": "2018"
+        },
+        {
+            "id": 12,
+            "foto": "zest.jpg",
+            "modelo": "Zest",
+            "marca": "Tata",
+            "precio": 30000,
+            "anio": "2015"
+        }
+    ]
+}
